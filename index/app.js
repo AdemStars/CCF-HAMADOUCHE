@@ -48,7 +48,7 @@ function afficheitem(doc){  // fonction qui va généré dans le html chaque ite
     function affichedescription(doc){
     document.addEventListener("click", function(){
   alert(doc.description);
-})
+}) 
     }
 items.map(item=>afficheitem(item)); // on execute la fonction
 items.map(item=>affichedescription(item));
