@@ -42,14 +42,23 @@ function afficheitem(doc){  // fonction qui va généré dans le html chaque ite
         carte.classList.add('card'); //et on lui rajoute la class card pour le css
         carte.innerHTML='<div class="card_image"><img src="'+ doc.img + '"/></div><div class="card_title title-white"><div><p>'+ doc.nom+'</p><p>'+doc.prix +' E</p></div> </div> </div>'; // le block principal en html
    list.appendChild(carte);
-  ;
+ 
+carte.addEventListener("click", function(){
+    alert(doc.description);
+}) 
+    }
 
-}
-    function affichedescription(doc){
-    document.addEventListener("click", function(){
-  alert(doc.description);
+
+function maxValue(doc) {
+    list.innerHTML=""
+    let carte = document.createElement('div'); // on créer une div 
+        carte.setAttribute('id', doc.id); // dans cette div il y aura l'id
+        carte.classList.add('card'); //et on lui rajoute la class card pour le css
+        carte.innerHTML='<div class="card_image"><img src="'+ doc.img + '"/></div><div class="card_title title-white"><div><p>'+ doc.nom+'</p><p>'+doc.prix +' E</p></div> </div> </div>'; // le block principal en html
+   list.appendChild(carte);
+ 
+carte.addEventListener("click", function(){
+    alert(doc.description);
 }) 
     }
 items.map(item=>afficheitem(item)); // on execute la fonction
-items.map(item=>affichedescription(item));
-
