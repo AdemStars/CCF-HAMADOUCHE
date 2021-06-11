@@ -1,3 +1,8 @@
+body
+{
+  padding: 30px;
+  background-color: #fcfcfc;
+}
 .cards-list {
     z-index: 0;
     width: 100%;
@@ -66,7 +71,7 @@
   }
 button{
     border: 0;
-    background: rgb(214, 13, 13);
+    background: rgb(13, 214, 13);
     border-radius: 10px;
     padding: 13px;
     width: 14%;
