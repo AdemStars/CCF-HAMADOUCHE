@@ -55,7 +55,6 @@ function maxValue(doc) {
         carte.setAttribute('id', doc.id); // dans cette div il y aura l'id
         carte.classList.add('card'); //et on lui rajoute la class card pour le css
         carte.innerHTML='<div class="card_image"><img src="'+ doc.img + '"/></div><div class="card_title title-white"><div><p>'+ doc.nom+'</p><p>'+doc.prix +' E</p></div> </div> </div>'; // le block principal en html
-   list.appendChild(carte);
  
 carte.addEventListener("click", function(){
     alert(doc.description);
